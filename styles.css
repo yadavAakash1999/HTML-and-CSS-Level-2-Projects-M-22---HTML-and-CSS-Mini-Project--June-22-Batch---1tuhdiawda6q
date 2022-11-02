@@ -1,1 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+    font-size: 16px;
+   
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.lower_container{
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.lower_container div{
+    padding: 0.5rem;
+}
+
+.text div{
+    text-align: center;
+}
+
+.plan{
+    display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+    margin: 1rem;
+    background-color:hsl(225, 100%, 94%,0.5);
+    border-radius: 10px;
+    padding-bottom: 0;
+     
+}
+
+/* .music , .price-container, .change_btn{
+} */
+
+.price-container{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+}
+
+
+
+.payment_btn_div{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.payment_btn{
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    width: 90%;
+    height: 40px;
+    background-color: blue;
+    border-radius: 7px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.cancle_btn_div{
+display: flex;
+justify-content: center;
+}
+
+.summary-heading{
+    font-size: large;
+    font-weight: bold;
+
+}
+
+.summary-detail p{
+    font-size: 14px;
+    line-height: 25px;
+    color :rgba(0, 0, 0, 0.5)
+}
+
+.plan-heading{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.plan-price{
+    font-size: 12px;
+    color :rgba(0, 0, 0, 0.25)
+    
+}
+
+.change_btn{
+    font-size: 12px;
+    align-self: center;
+
+}
+.change_btn a {
+    color: blue;
+}
+
+div .text{
+    padding-bottom: 0;
+}
+
+.cancle_btn {
+    font-size: 12px;
+    text-decoration: none;
+    color :rgba(0, 0, 0, 0.25)
+}
+@media screen and (max-width : 700px) {
+    body{
+        background-image: url(/images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+
+    .container{
+        min-width: 80%;
+    }
+    
+}
